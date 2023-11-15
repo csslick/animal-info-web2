@@ -1,0 +1,21 @@
+/* style.css */
+:root {
+    --main-color: #1ABC9C;
+    --text-color-dark: #000;
+    --text-color-light: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+
+header {
+    background-color: var(--main-color);
+}
