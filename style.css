@@ -51,3 +51,37 @@ header nav a {
 }
 
 header nav a.active { border-bottom: 3px solid #fff; }
+
+section.main {
+    padding: 20px 15px;
+}
+
+section.main h2 {
+    margin-bottom: 20px;
+}
+
+section.main .animal-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.main .animal-list .item {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* 홀수 item 우측 마진 */
+section.main .animal-list .item:nth-child(odd) {
+    /* border: 2px solid red; */
+    padding-right: 7.5px;
+}
+
+/* 짝수 item 좌측 마진 */
+section.main .animal-list .item:nth-child(even) {
+    /* border: 2px solid blue; */
+    padding-left: 7.5px;
+}
+
+section.main .animal-list .item img {
+    width: 100%;
+}
