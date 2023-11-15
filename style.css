@@ -12,10 +12,42 @@
 }
 
 body {
-    background-color: #ccc;
+    background-color: #fff;
     text-align: center;
+    font-family: "맑은 고딕", sans-serif;
 }
 
 header {
+    width: 100%;
     background-color: var(--main-color);
+    /* x | y | blur | color */
+    box-shadow: 0 4px 4px rgba(0,0,0, 0.25);
 }
+
+header a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+header h1 {
+    /* outline: 1px solid red; */
+    padding: 11px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* nav 버튼 */
+header nav {
+    display: flex;
+}
+header nav a {
+    /* outline: 1px solid #333; */
+    display: block;
+
+    /* width: 33.33%; */
+    /* calc(계산식) */
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+header nav a.active { border-bottom: 3px solid #fff; }
